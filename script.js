@@ -223,9 +223,10 @@ function startTypewriter() {
     const messageContent = document.querySelector('.message-content');
     if (!messageContent) return;
     
-    const fullMessage = `Hi, Elfy
+    const fullMessage = `i know we haven’t known each other that long, but somehow, everything about this feels natural. i’ve been thinking about how different life feels since you came around and honestly, it just feels better. without needing to say much or do anything big, you already bring a sense of calm i didn’t even realize i was missing. you’re soft in the best way, kind without trying, and your presence feels like a warm hug that lingers in the best possible way.
 
-I don’t know how to explain it exactly, but ever since you came into my life, things just feel a little lighter. You didn’t do anything grand or dramatic you’re just you. Soft, kind, and quietly bright in a way that makes everything feel okay, even on days that aren’t. There’s this comfort in you that I’ve never really found in anyone else. Just knowing you’re around makes me feel calm. You have this gentle way of making the world seem less heavy. You make me smile in ways I don’t even notice until I realize I’ve been smiling for a while. It’s not just the things you say it’s your energy, your warmth, the way your presence stays with me even after we stop talking. I guess what I’m trying to say is... I like you. A lot. In a way that’s quiet but certain. In a way that makes me genuinely happy. And honestly? You feel a little bit like home.`;
+there’s a peace i feel when i talk to you, like time slows down and the world makes a little more sense. even when we’re not talking, you stay with me in my head, in the little moments, and in the way i smile without even noticing. i like you, genuinely. you make my days feel less heavy and my heart a little fuller. it’s like something quietly clicked into place. you really do feel like home to me. i love where we are, and i’d really like to take that a little further. if you feel the same, would you like to be mine?
+`;
     
     // Clear content and start fresh
     messageContent.innerHTML = '';
@@ -260,7 +261,9 @@ function skipTypewriter() {
         clearInterval(typewriterInterval);
         const messageContent = document.querySelector('.message-content');
         if (messageContent) {
-            const fullMessage = `Hi Cel,<br><br>Happy Birthday!<br><br>Hari ini aku pengen kamu ngerasain semua hal positif dan keajaiban yang cuma bisa didapetin kalo kamu ada di dunia ini. Semoga segala keinginanmu tercapai, apalagi yang kocak-kocak dan gak biasa, karena kamu tuh unik banget! Aku selalu percaya kalau kamu bisa melewati semua tantangan dengan kekuatan dan semangat yang luar biasa.<br><br>Terima kasih udah jadi bagian hidup aku yang paling berharga. Kamu bener-bener bikin hari-hari aku jadi lebih berarti dan penuh warna. Semoga di tahun yang baru ini, kamu makin bahagia, makin sukses, dan tentunya makin cantik (walaupun udah cantik banget sih!).<br><br>I love you so much! 💕`;
+            const fullMessage = `i know we haven’t known each other that long, but somehow, everything about this feels natural. i’ve been thinking about how different life feels since you came around and honestly, it just feels better. without needing to say much or do anything big, you already bring a sense of calm i didn’t even realize i was missing. you’re soft in the best way, kind without trying, and your presence feels like a warm hug that lingers in the best possible way.
+
+there’s a peace i feel when i talk to you, like time slows down and the world makes a little more sense. even when we’re not talking, you stay with me in my head, in the little moments, and in the way i smile without even noticing. i like you, genuinely. you make my days feel less heavy and my heart a little fuller. it’s like something quietly clicked into place. you really do feel like home to me. i love where we are, and i’d really like to take that a little further. if you feel the same, would you like to be mine?`;
             messageContent.innerHTML = fullMessage;
             isTyping = false;
             messageContent.scrollTop = messageContent.scrollHeight;
@@ -376,7 +379,7 @@ function startPhotoShow() {
 
 
 
-            BIRTHDAY MEMORIES </div>
+            STORY OF US </div>
         </div>
         <div class="scroll-indicator">⬇ Scroll Down ⬇</div>
     `;
@@ -394,7 +397,7 @@ function startPhotoShow() {
             progressDiv.textContent = `GET READY... ${countdown}`;
         } else {
             clearInterval(countdownInterval);
-            progressDiv.textContent = 'CHEESE';
+            progressDiv.textContent = 'CHEESE!';
             startPhotoCapture(photos);
         }
     }, 1000);
@@ -499,7 +502,7 @@ function startPhotoCapture(photos) {
             
             setTimeout(() => {
                 progressDiv.textContent = 'PHOTO STRIP COMPLETE!';
-                photoBtn.textContent = 'CETAK LAGI';
+                photoBtn.textContent = '    PRINT AGAIN';
                 photoBtn.disabled = false;
                 
                 photoBtn.removeEventListener('click', startPhotoShow);
@@ -517,7 +520,7 @@ function startNewSession() {
     
     // Reset for new session
     progressDiv.textContent = 'READY TO PRINT';
-    photoBtn.textContent = 'MULAI CETAK';
+    photoBtn.textContent = 'START PRINT';
     
     // Remove old listener and add original
     photoBtn.removeEventListener('click', startNewSession);
@@ -526,7 +529,7 @@ function startNewSession() {
     // Clear display
     const photoDisplay = document.querySelector('.photo-display');
     if (photoDisplay) {
-        photoDisplay.innerHTML = '<div class="photo-placeholder">Press MULAI CETAK to start photo session</div>';
+        photoDisplay.innerHTML = '<div class="photo-placeholder">Press start print to start photo session</div>';
     }
     
     // CRITICAL: Reset photo index to exactly 0
@@ -564,8 +567,8 @@ function initializeMusicPlayer() {
                 <button class="playlist-btn" data-playlist="3">Playlist 3</button>
             </div>
             <div class="music-info">
-                <div class="current-playlist">Now Playing: Birthday Special Mix</div>
-                <div class="playlist-description">Lagu-lagu spesial untuk hari istimewa kamu ✨</div>
+                <div class="current-playlist">Now Playing: Love Special Mix</div>
+                <div class="playlist-description">Special song for you</div>
             </div>
         </div>
     `;
