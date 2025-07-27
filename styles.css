@@ -224,7 +224,7 @@ body {
     align-items: center;
     margin-bottom: 15px;
     font-size: 12px;
-    color: #666;
+    color: #050505;
 }
 
 .power-indicator {
@@ -236,7 +236,7 @@ body {
 .power-dot {
     width: 8px;
     height: 8px;
-    background: #ff4444;
+    background: #ff0000;
     border-radius: 50%;
 }
 
@@ -387,39 +387,43 @@ body {
 }
 
 .message-btn {
-    background: linear-gradient(145deg, #4a90e2, #357abd);
-    color: white;
+    background: #437BBB;
+    color: #e8e8e8; /* biru tua */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .message-btn:hover {
-    background: linear-gradient(145deg, #357abd, #2968a3);
+    background: #437BBB; /* biru sangat terang */
 }
 
 .gallery-btn {
-    background: linear-gradient(145deg, #e74c3c, #c0392b);
-    color: white;
+    background: #437BBB;
+    color: #e8e8e8; /* biru tua */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .gallery-btn:hover {
-    background: linear-gradient(145deg, #c0392b, #a93226);
+    background: #437BBB; /* merah sangat terang */
 }
 
 .music-btn {
-    background: linear-gradient(145deg, #9b59b6, #8e44ad);
-    color: white;
+    background: #437BBB;
+    color: #e8e8e8; /* biru tua */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .music-btn:hover {
-    background: linear-gradient(145deg, #8e44ad, #7d3c98);
+    background: #437BBB; /* ungu sangat terang */
 }
 
 .tetris-btn {
-    background: linear-gradient(145deg, #27ae60, #229954);
-    color: white;
+    background: #437BBB;
+    color: #e8e8e8; /* biru tua */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .tetris-btn:hover {
-    background: linear-gradient(145deg, #229954, #1e8449);
+    background: #437BBB; /* hijau sangat terang */
 }
 
 /* Ensure all buttons have consistent focus states */
@@ -530,13 +534,15 @@ body {
 }
 
 .b-btn {
-    background: linear-gradient(145deg, #e74c3c, #c0392b);
-    color: white;
+    background: #437BBB;
+    color: #e8e8e8; /* biru tua */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .a-btn {
-    background: linear-gradient(145deg, #e74c3c, #c0392b);
-    color: white;
+    background: #437BBB;
+    color: #e8e8e8; /* biru tua */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .bottom-controls {
@@ -550,8 +556,8 @@ body {
     padding: 8px 16px;
     border: none;
     border-radius: 20px;
-    background: #666;
-    color: white;
+    background: #437BBB;
+    color: #e8e8e8;
     font-family: inherit;
     font-size: 12px;
     cursor: pointer;
@@ -559,7 +565,7 @@ body {
 }
 
 .control-btn:hover {
-    background: #777;
+    background: #437BBB;
     transform: translateY(-1px);
 }
 
@@ -582,7 +588,7 @@ body {
 .page-container {
     width: 400px;
     height: 600px;
-    background: linear-gradient(145deg, #7b68ee, #6a5acd);
+    background: linear-gradient(145deg, #437BBB, #437BBB);
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
@@ -1161,7 +1167,7 @@ body {
 }
 
 .tetris-btn:hover {
-    background: #357abd;
+    background: #ffffff;
     transform: translateY(-1px);
 }
 
